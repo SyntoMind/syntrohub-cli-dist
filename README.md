@@ -11,7 +11,7 @@ Requires Node.js 22 or newer (Linux, macOS, Windows).
 npm installs the release straight from its URL:
 
 ```sh
-npm install -g https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz
+npm install -g https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.1/syntrohub-cli-2.0.1.tgz
 syntrohub --version
 ```
 
@@ -20,15 +20,15 @@ The package is not on the npm registry; `npm install -g syntrohub-cli` will retu
 To verify the checksum before installing:
 
 ```sh
-curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz
-curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz.sha256
-sha256sum -c syntrohub-cli-2.0.0.tgz.sha256
-npm install -g ./syntrohub-cli-2.0.0.tgz
+curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.1/syntrohub-cli-2.0.1.tgz
+curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.1/syntrohub-cli-2.0.1.tgz.sha256
+sha256sum -c syntrohub-cli-2.0.1.tgz.sha256
+npm install -g ./syntrohub-cli-2.0.1.tgz
 ```
 
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz" -OutFile syntrohub-cli-2.0.0.tgz
-npm install -g .\syntrohub-cli-2.0.0.tgz
+Invoke-WebRequest -Uri "https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.1/syntrohub-cli-2.0.1.tgz" -OutFile syntrohub-cli-2.0.1.tgz
+npm install -g .\syntrohub-cli-2.0.1.tgz
 ```
 
 There is no standalone executable, Chocolatey package or Python SDK for v2.
