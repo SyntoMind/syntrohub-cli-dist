@@ -8,22 +8,26 @@ This repository distributes the released package. The source lives in a private 
 
 Requires Node.js 22 or newer (Linux, macOS, Windows).
 
+npm installs the release straight from its URL:
+
 ```sh
-npm install -g syntrohub-cli
+npm install -g https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz
 syntrohub --version
 ```
 
-Or install a release tarball directly, verifying its checksum first:
+The package is not on the npm registry; `npm install -g syntrohub-cli` will return 404.
+
+To verify the checksum before installing:
 
 ```sh
-curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/latest/download/syntrohub-cli-2.0.0.tgz
-curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/latest/download/syntrohub-cli-2.0.0.tgz.sha256
+curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz
+curl -LO https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz.sha256
 sha256sum -c syntrohub-cli-2.0.0.tgz.sha256
 npm install -g ./syntrohub-cli-2.0.0.tgz
 ```
 
 ```powershell
-Invoke-WebRequest -Uri "https://github.com/SyntoMind/syntrohub-cli-dist/releases/latest/download/syntrohub-cli-2.0.0.tgz" -OutFile syntrohub-cli-2.0.0.tgz
+Invoke-WebRequest -Uri "https://github.com/SyntoMind/syntrohub-cli-dist/releases/download/v2.0.0/syntrohub-cli-2.0.0.tgz" -OutFile syntrohub-cli-2.0.0.tgz
 npm install -g .\syntrohub-cli-2.0.0.tgz
 ```
 
